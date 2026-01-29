@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>UltimateShop</title>
+<link rel="stylesheet" href="document.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Header / Navbar -->
+<header>
+  <div class="logo">UltimateShop</div>
+  <nav>
+    <button onclick="showPage('home')">Home</button>
+    <button onclick="showPage('about')">About</button>
+    <button onclick="toggleCategories()">Categories</button>
+    <button onclick="showPage('deals')">Deals</button>
+    <button onclick="showPage('cart')">Cart</button>
+    <button onclick="showPage('contact')">Contact</button>
+  </nav>
+</header>
+
+<!-- Categories Menu -->
+<div id="categoryMenu" class="categories">
+  <button onclick="showProducts('shoes')">Shoes</button>
+  <button onclick="showProducts('clothes')">Clothes</button>
+  <button onclick="showProducts('electronics')">Electronics</button>
+  <button onclick="showProducts('accessories')">Accessories</button>
+  <button onclick="showProducts('gadgets')">Gadgets</button>
+  <button onclick="showProducts('toys')">Toys</button>
+</div>
+
+<!-- Main Content -->
+<main>
+
+  <!-- Home / Hero Banner -->
+  <div id="home" class="page active">
+    <div class="hero">
+      <h1>Welcome to UltimateShop</h1>
+      <p>Experience next-level online shopping</p>
+    </div>
+    <h2>Featured Products</h2>
+    <div id="featuredProducts" class="product-grid"></div>
+  </div>
+
+  <!-- About -->
+  <div id="about" class="page">
+    <h1>About UltimateShop</h1>
+    <p>UltimateShop brings the best deals, premium products and fast delivery. Designed to impress, built for speed.</p>
+  </div>
+
+  <!-- Deals / Slider -->
+  <div id="deals" class="page">
+    <h1>Hot Deals</h1>
+    <div id="dealsSlider" class="slider"></div>
+  </div>
+
+  <!-- Products -->
+  <div id="products" class="page">
+    <h1 id="productTitle"></h1>
+    <div id="productBox" class="product-grid"></div>
+  </div>
+
+  <!-- Cart -->
+  <div id="cart" class="page">
+    <h1>Your Cart</h1>
+    <div id="cartItems"></div>
+    <h3 id="total"></h3>
+    <button onclick="goOrder()">Order Now</button>
+  </div>
+
+  <!-- Order / Checkout -->
+  <div id="order" class="page">
+    <h1>Checkout</h1>
+    <input placeholder="Full Name" id="name"><br><br>
+    <input placeholder="Address" id="address"><br><br>
+    <input placeholder="Phone" id="phone"><br><br>
+    <button onclick="placeOrder()">Confirm Order</button>
+    <h2 id="orderMsg"></h2>
+  </div>
+
+  <!-- Contact -->
+  <div id="contact" class="page">
+    <h1>Contact Us</h1>
+    <p>Email: saribmoaviyamoaviya125@gmail.com</p>
+    <p>Phone: 0303-2533006</p>
+  </div>
+
+</main>
+
+<script src="document.js"></script>
+</body>
+</html>

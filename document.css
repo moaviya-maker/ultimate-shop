@@ -1,0 +1,172 @@
+/* ===============================
+style.css - UltimateShop Dark Modern Theme
+=============================== */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+  background: linear-gradient(135deg,#1f2937,#111827);
+  color:white;
+}
+
+/* Header */
+header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 40px;
+  background:#232f3e;
+}
+header .logo{
+  font-size:30px;
+  font-weight:bold;
+}
+header nav button{
+  margin-left:10px;
+  padding:10px 15px;
+  border:none;
+  border-radius:5px;
+  background:#37475a;
+  color:white;
+  cursor:pointer;
+  transition:0.3s;
+}
+header nav button:hover{
+  background:#485769;
+}
+
+/* Categories */
+.categories{
+  display:none;
+  background:#37475a;
+  padding:10px;
+  text-align:center;
+}
+.categories button{
+  margin:5px;
+  padding:8px 15px;
+  border:none;
+  border-radius:5px;
+  background:#6f7c8a;
+  color:white;
+  cursor:pointer;
+  transition:0.3s;
+}
+.categories button:hover{
+  background:#9aa0a9;
+}
+
+/* Pages */
+.page{
+  display:none;
+  padding:30px 40px;
+}
+.page.active{
+  display:block;
+}
+
+/* Hero Banner */
+.hero{
+  background: linear-gradient(to right,#37475a,#232f3e);
+  padding:80px;
+  border-radius:15px;
+  text-align:center;
+  margin-bottom:40px;
+}
+.hero h1{
+  font-size:48px;
+}
+.hero p{
+  font-size:20px;
+  color:#d1d5db;
+}
+
+/* Product Grid */
+.product-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:30px;
+}
+.card{
+  background:#1f2937;
+  border-radius:10px;
+  box-shadow:0 8px 20px rgba(0,0,0,0.3);
+  padding:15px;
+  text-align:center;
+  transition:0.3s;
+}
+.card:hover{
+  transform:translateY(-8px);
+}
+.card img{
+  width:100%;
+  height:160px;
+  border-radius:10px;
+  object-fit:cover;
+}
+.card h4{
+  margin:10px 0;
+}
+.card p{
+  color:#f3f4f6;
+}
+.card button{
+  margin-top:10px;
+  padding:10px 15px;
+  border:none;
+  border-radius:5px;
+  background:#f0c14b;
+  color:#111;
+  cursor:pointer;
+  transition:0.3s;
+}
+.card button:hover{
+  background:#ddb347;
+}
+
+/* Slider */
+.slider{
+  display:flex;
+  overflow-x:auto;
+  gap:20px;
+  padding:20px 0;
+}
+.slider::-webkit-scrollbar{
+  display:none;
+}
+
+/* Cart */
+#cartItems div{
+  background:#1f2937;
+  padding:15px;
+  margin:10px 0;
+  border-radius:8px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+#cartItems button{
+  margin-left:5px;
+  padding:5px 10px;
+  border:none;
+  border-radius:5px;
+  background:#f0c14b;
+  color:#111;
+  cursor:pointer;
+}
+
+input{
+  width:100%;
+  padding:12px;
+  margin:10px 0;
+  border-radius:6px;
+  border:1px solid #ccc;
+}
+
+button{
+  transition:0.3s;
+}
